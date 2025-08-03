@@ -51,21 +51,18 @@
     </div>
 
     <!-- Anafo Agency AI Voice Assistant -->
-    <script src="https://voicewidget.example.com/embed.js"></script>
-    <script>
-      VoiceWidget.init({
-        apiKey: 'YOUR_API_KEY',
-        welcomeMessage: "Hi! Welcome to Anafo Agency. I'm your AI assistant, and I'm here to help you grow your business. Can I ask you a few quick questions?",
-        questions: [
-          "Are you a startup or an established small business?",
-          "What's your biggest challenge right now - website, marketing, branding, or something else?",
-          "What's your budget range for getting help?",
-          "How soon are you looking to get started?",
-          "Would you like to book a free 15-minute consultation call with our team?"
-        ],
-        brandColor: "#2563eb",
-        position: "bottom-right"
-      });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/@vapi-ai/web-widget@latest/dist/web-widget.min.js"></script>
+<script>
+  VapiWebWidget.init({
+    apiKey: "demo",
+    config: {
+      welcomeMessage: "Hi! How can I help you with Anafo Agency today?",
+      agent: {
+        name: "Anafo Assistant"
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
